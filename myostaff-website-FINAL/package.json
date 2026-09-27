@@ -1,0 +1,10 @@
+{
+  "name": "myostaff-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My-O-Staff Pty Ltd website — static site hosted on Cloudflare Pages.",
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "build": "echo \"Static site — nothing to build.\""
+  }
+}
