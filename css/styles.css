@@ -538,3 +538,16 @@ details.faq p { margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem; }
 .section-navy .value-chips li { background: rgba(255,255,255,0.1); color: var(--white); }
 .section-navy .stat-number { color: var(--white); }
 .section-navy .stat-label { color: #9fb2c4; }
+/* Highlight section restructure */
+#data-licensing .split.top-align { align-items: flex-start; }
+.ticker-line { justify-content: center; margin: 1.8rem 0 0.6rem; }
+.ticker-line.visible { animation: tickerIn 2.4s cubic-bezier(0.2, 0.8, 0.25, 1) both; }
+@keyframes tickerIn {
+  from { transform: translateX(-115%); }
+  to   { transform: translateX(0); }
+}
+.full-line { max-width: 100%; }
+#data-licensing .section-note {
+  color: #9fb2c4; font-size: 0.85rem;
+  margin-top: 2.2rem; max-width: 100%;
+}
