@@ -115,10 +115,40 @@ img, iframe { max-width: 100%; }
 
 /* Testimonial strip (after highlight section) */
 .testimonial-strip { padding: 3.5rem 0; background: var(--white); }
-.testimonial-strip .container { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.9rem; }
-.strip-img { width: 110px; border-radius: 12px; box-shadow: var(--shadow-lg); }
-.strip-quote { max-width: 44rem; font-size: 1.08rem; color: var(--ink); font-weight: 500; }
-.strip-attribution { font-size: 0.88rem; color: var(--muted); }
+.testimonial-strip .strip-row { display: flex; align-items: center; gap: 2rem; }
+.strip-img { width: 190px; flex-shrink: 0; border-radius: 14px; box-shadow: var(--shadow-lg); }
+.strip-text { text-align: left; }
+.strip-quote { font-size: 1.12rem; color: var(--ink); font-weight: 500; }
+.strip-attribution { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+
+/* Hero notice (pointer to new service) */
+.hero-notice {
+  display: inline-flex; align-items: center; gap: 0.8rem;
+  margin-top: 1.8rem; padding: 0.6rem 1.1rem;
+  background: var(--white); border: 1.5px solid var(--gold);
+  border-radius: 999px; box-shadow: var(--shadow);
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+}
+.hero-notice:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.hero-notice-tag {
+  background: var(--gold); color: var(--navy-dark);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.25rem 0.7rem; border-radius: 999px; flex-shrink: 0;
+}
+.hero-notice-text { font-size: 0.92rem; font-weight: 500; color: var(--navy); }
+.hero-pillars { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; margin: 0.4rem 0 1rem; }
+.hero-pillars li { padding-left: 1.4rem; position: relative; color: var(--ink); font-size: 0.98rem; font-weight: 500; }
+.hero-pillars li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
+.hero-pillars li.new { color: var(--navy); }
+.hero-pillars li.new em { font-style: normal; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: var(--gold); color: var(--navy-dark); padding: 0.12rem 0.5rem; border-radius: 999px; margin-left: 0.4rem; vertical-align: middle; }
+.hero-notice-link { font-size: 0.9rem; font-weight: 600; }
+
+@media (max-width: 700px) {
+  .testimonial-strip .strip-row { flex-direction: column; text-align: center; }
+  .strip-text { text-align: center; }
+}
 .hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center; }
 .hero .lead { font-size: 1.1rem; color: var(--muted); margin: 1.2rem 0 2rem; max-width: 34rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
