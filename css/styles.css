@@ -493,11 +493,3 @@ details.faq p { margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem; }
 .footer-legal { font-size: 0.85rem; margin-bottom: 0.6rem; }
 .footer-legal a { display: inline !important; margin: 0 0.3rem; color: #b9c6d4; }
 .footer-legal a:hover { color: var(--gold); }
-/* Data-licensing highlight */
-.btn-ghost-light { border-color: var(--white); color: var(--white); }
-.btn-ghost-light:hover { background: var(--white); color: var(--navy); }
-.img-placeholder.dark { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.3); color: #c4d2e0; }
-.img-placeholder.dark svg { color: var(--gold); }
-.section-navy .value-chips li { background: rgba(255,255,255,0.1); color: var(--white); }
-.section-navy .stat-number { color: var(--white); }
-.section-navy .stat-label { color: #9fb2c4; }
