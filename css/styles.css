@@ -493,3 +493,9 @@ details.faq p { margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem; }
 .footer-legal { font-size: 0.85rem; margin-bottom: 0.6rem; }
 .footer-legal a { display: inline !important; margin: 0 0.3rem; color: #b9c6d4; }
 .footer-legal a:hover { color: var(--gold); }
+.btn-ghost-light { border-color: var(--white); color: var(--white); }
+.btn-ghost-light:hover { background: var(--white); color: var(--navy); }
+.highlight-img { width: 100%; max-width: 440px; display: block; margin: 0 auto; border-radius: 18px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+.section-navy .value-chips li { background: rgba(255,255,255,0.1); color: var(--white); }
+.section-navy .stat-number { color: var(--white); }
+.section-navy .stat-label { color: #9fb2c4; }
